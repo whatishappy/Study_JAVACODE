@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="SGY8lZXcqL9NpCOKo6cL">
+    <mxGraphModel dx="577" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lOGVJWPyMXw-3I0smY9d-5" edge="1" parent="1" source="lOGVJWPyMXw-3I0smY9d-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lOGVJWPyMXw-3I0smY9d-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lOGVJWPyMXw-3I0smY9d-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="请求" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-2" edge="1" parent="1" source="lOGVJWPyMXw-3I0smY9d-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339.8571428571429" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lOGVJWPyMXw-3I0smY9d-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="获取请求路径" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="http://localhost:8080/emp" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-5" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-22" connectable="0" parent="U_eczj-FGVdRCSbZwAIf-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.4289" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-20" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="280" />
+            </Array>
+            <mxPoint x="280" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-21" connectable="0" parent="U_eczj-FGVdRCSbZwAIf-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.7697" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="判断为&lt;div&gt;登录请求&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="166" x="260" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-7" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-9" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="380.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-14" connectable="0" parent="U_eczj-FGVdRCSbZwAIf-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.2008" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="获取请求头中&lt;div&gt;token&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="283" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-11" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="U_eczj-FGVdRCSbZwAIf-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-15" connectable="0" parent="U_eczj-FGVdRCSbZwAIf-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="未通过" vertex="1">
+          <mxGeometry relative="1" x="-0.231" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-16" edge="1" parent="1" source="U_eczj-FGVdRCSbZwAIf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-8" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="校验token" vertex="1">
+          <mxGeometry height="80" width="157" x="264.5" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="401" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="U_eczj-FGVdRCSbZwAIf-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="请求放行" vertex="1">
+          <mxGeometry height="60" width="120" x="283" y="555" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
