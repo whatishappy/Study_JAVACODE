@@ -34,9 +34,19 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="oe4E_ihCyTPdVmhbSrAz-1" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.7714" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="qyqPOn5n5-scmiJf4OSg-9" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oe4E_ihCyTPdVmhbSrAz-2" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.4" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qyqPOn5n5-scmiJf4OSg-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="判断是否要的起" vertex="1">
