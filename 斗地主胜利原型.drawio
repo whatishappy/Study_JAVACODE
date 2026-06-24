@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="9Up83IkeTY5Wz3aQ5usa">
+    <mxGraphModel dx="1201" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-3" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="开始打牌" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-5" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="地主先出牌" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-7" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="qyqPOn5n5-scmiJf4OSg-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="260" />
+              <mxPoint x="560" y="155" />
+            </Array>
+            <mxPoint x="520" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-8" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="继续出牌" vertex="1">
+          <mxGeometry relative="1" x="0.7481" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-9" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="判断是否要的起" vertex="1">
+          <mxGeometry height="80" width="220" x="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-11" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="农民出牌" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-13" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="qyqPOn5n5-scmiJf4OSg-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="450" />
+              <mxPoint x="660" y="360" />
+            </Array>
+            <mxPoint x="600" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-14" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="继续出牌" vertex="1">
+          <mxGeometry relative="1" x="0.5613" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-15" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="地主要不起" vertex="1">
+          <mxGeometry relative="1" x="-0.7533" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-16" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qyqPOn5n5-scmiJf4OSg-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="450" />
+              <mxPoint x="100" y="160" />
+            </Array>
+            <mxPoint x="120" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-17" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="地主出牌" vertex="1">
+          <mxGeometry relative="1" x="0.6566" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-18" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="判断是否要的起" vertex="1">
+          <mxGeometry height="80" width="220" x="260" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-20" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-27" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="其中一个农民牌为空" vertex="1">
+          <mxGeometry relative="1" x="-0.5833" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-22" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-26" connectable="0" parent="qyqPOn5n5-scmiJf4OSg-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="地主牌为空" vertex="1">
+          <mxGeometry relative="1" x="-0.2786" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-19" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="检查牌是否为空" vertex="1">
+          <mxGeometry height="80" width="240" x="250" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-25" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="农民胜利" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-24" edge="1" parent="1" source="qyqPOn5n5-scmiJf4OSg-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="地主胜利" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="qyqPOn5n5-scmiJf4OSg-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="游戏结束" vertex="1">
+          <mxGeometry height="60" width="120" x="294" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
