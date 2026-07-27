@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="HAwLOg9W0P2_3ieF_Q0q">
+    <mxGraphModel dx="941" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-3" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="sstart" vertex="1">
+          <mxGeometry height="50" width="100" x="260" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-6" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="geTiZNlVs_iYw4X8YRKG-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="请求并写道cookie" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-8" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="geTiZNlVs_iYw4X8YRKG-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-10" connectable="0" parent="geTiZNlVs_iYw4X8YRKG-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="有" vertex="1">
+          <mxGeometry relative="1" x="-0.05" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="从session中获取用户" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-12" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="geTiZNlVs_iYw4X8YRKG-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-18" connectable="0" parent="geTiZNlVs_iYw4X8YRKG-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="存在" vertex="1">
+          <mxGeometry relative="1" x="0.32" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-19" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-20" connectable="0" parent="geTiZNlVs_iYw4X8YRKG-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="没有" vertex="1">
+          <mxGeometry relative="1" x="-0.6059" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;用户是否存在&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="235" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-13" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="保存用户到ThreadLocal" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-15" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="放行" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;结束&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="250" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-22" edge="1" parent="1" source="geTiZNlVs_iYw4X8YRKG-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.396;entryDx=0;entryDy=0;entryPerimeter=0;" target="geTiZNlVs_iYw4X8YRKG-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="620" />
+              <mxPoint x="369.6" y="620" />
+            </Array>
+            <mxPoint x="480" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="geTiZNlVs_iYw4X8YRKG-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="拦截器" vertex="1">
+          <mxGeometry height="60" width="120" x="420" y="470" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
