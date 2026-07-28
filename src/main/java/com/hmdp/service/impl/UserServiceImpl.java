@@ -108,9 +108,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
                 CopyOptions.create().setIgnoreNullValue(true)
                         .setFieldValueEditor((filedName,fieldValue)-> fieldValue.toString()));
         // TODO 6.4 存储
-        stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY,usermap);
+        stringRedisTemplate.opsForHash().putAll(RedisConstants.LOGIN_USER_KEY + token,usermap);
         //设置token有效期
-        stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY,RedisConstants.LOGIN_USER_TTL,TimeUnit.MINUTES);
+        stringRedisTemplate.expire(RedisConstants.LOGIN_USER_KEY + token,RedisConstants.LOGIN_USER_TTL,TimeUnit.MINUTES);
 
         // todo 7返回token
         return Result.ok(token);
