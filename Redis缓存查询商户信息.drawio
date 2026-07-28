@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="9Fj8sBt6oR5-B5tCZtxK">
+    <mxGraphModel dx="704" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TuZaNHpuaIth0iJEivDY-2" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TuZaNHpuaIth0iJEivDY-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;" value="开始" vertex="1">
+          <mxGeometry height="60" width="80" x="210" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-4" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="查询Redis中的商户数据" vertex="1">
+          <mxGeometry height="40" width="100" x="200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-6" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-8" connectable="0" parent="TuZaNHpuaIth0iJEivDY-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="命中" vertex="1">
+          <mxGeometry relative="1" x="-0.1333" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-13" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TuZaNHpuaIth0iJEivDY-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-14" connectable="0" parent="TuZaNHpuaIth0iJEivDY-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="未命中" vertex="1">
+          <mxGeometry relative="1" x="-0.4349" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断缓存是否命中&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="195" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-9" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-11" connectable="0" parent="TuZaNHpuaIth0iJEivDY-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="返回" vertex="1">
+          <mxGeometry relative="1" x="0.28" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="查询到商户" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;" value="结束" vertex="1">
+          <mxGeometry height="60" width="80" x="210" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-16" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TuZaNHpuaIth0iJEivDY-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="查询数据库是否存在商户" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-19" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.017;entryY=0.394;entryDx=0;entryDy=0;entryPerimeter=0;" target="TuZaNHpuaIth0iJEivDY-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="330" />
+              <mxPoint x="580" y="440" />
+              <mxPoint x="291.4" y="440" />
+            </Array>
+            <mxPoint x="560" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-20" connectable="0" parent="TuZaNHpuaIth0iJEivDY-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="不存在" vertex="1">
+          <mxGeometry relative="1" x="0.3595" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-22" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-18" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="判断数据库中是否有商户&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="490" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="保存数据到Redis中" vertex="1">
+          <mxGeometry height="35" width="90" x="380" y="312.5" as="geometry" />
+        </mxCell>
+        <mxCell id="TuZaNHpuaIth0iJEivDY-24" edge="1" parent="1" source="TuZaNHpuaIth0iJEivDY-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.639;entryDx=0;entryDy=0;entryPerimeter=0;" target="TuZaNHpuaIth0iJEivDY-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
