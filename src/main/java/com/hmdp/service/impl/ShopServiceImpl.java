@@ -34,12 +34,30 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     private StringRedisTemplate stringRedisTemplate;
     @Override
     public Result queryById(Long id){
+<<<<<<< HEAD
 
         Shop shop = queryWithMutex(id);
         if (shop == null) {
             return Result.fail("店铺不存在");
+=======
+        String cacheKey = CACHE_SHOP_KEY + id;
+        //从redis中获取商铺缓存
+        String shopJson = stringRedisTemplate.opsForValue().get(cacheKey);
+        //存在，返回商铺信息
+        if (StrUtil.isNotBlank(shopJson)) {
+            Shop shop = JSONUtil.toBean(shopJson, Shop.class);
+            return Result.ok(shop);
+>>>>>>> fix-login-token-401-error-AYiLIu
         }
 
+<<<<<<< HEAD
+=======
+            return Result.fail("商铺不存在!!!");
+        }
+        //数据库存在，将查询的商铺信息存入redis
+        stringRedisTemplate.opsForValue().set(cacheKey, JSONUtil.toJsonStr(shop));
+        //返回商铺信息
+>>>>>>> fix-login-token-401-error-AYiLIu
         return Result.ok(shop);
         //结束业务
     }
