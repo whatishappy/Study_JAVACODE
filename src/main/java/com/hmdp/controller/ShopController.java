@@ -43,10 +43,9 @@ public class ShopController {
      */
     @PostMapping
     public Result saveShop(@RequestBody Shop shop) {
-        // 写入数据库
-        shopService.save(shop);
+        Long id = shop.getId();
         // 返回店铺id
-        return Result.ok(shop.getId());
+        return shopService.queryById(id);
     }
 
     /**
@@ -56,9 +55,7 @@ public class ShopController {
      */
     @PutMapping
     public Result updateShop(@RequestBody Shop shop) {
-        // 写入数据库
-        shopService.updateById(shop);
-        return Result.ok();
+        return shopService.Update(shop);
     }
 
     /**
