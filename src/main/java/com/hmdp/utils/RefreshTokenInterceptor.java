@@ -1,4 +1,4 @@
-package com.hmdp.utils;
+﻿package com.hmdp.utils;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
@@ -44,7 +44,7 @@ public class RefreshTokenInterceptor implements HandlerInterceptor {
         UserHolder.saveUser(userDTO);
 
         //TODO 刷新token有效期
-        stringRedisTemplate.expire(key,RedisConstants.LOGIN_USER_TTL, TimeUnit.MINUTES);
+        stringRedisTemplate.expire(key + token,RedisConstants.LOGIN_USER_TTL, TimeUnit.MINUTES);
 
         return true;
     }

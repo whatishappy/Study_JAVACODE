@@ -1,4 +1,4 @@
-package com.hmdp.controller;
+﻿package com.hmdp.controller;
 
 
 import cn.hutool.core.util.StrUtil;
@@ -33,7 +33,7 @@ public class ShopController {
      */
     @GetMapping("/{id}")
     public Result queryShopById(@PathVariable("id") Long id) {
-        return Result.ok(shopService.getById(id));
+        return shopService.queryById(id);
     }
 
     /**
@@ -43,9 +43,10 @@ public class ShopController {
      */
     @PostMapping
     public Result saveShop(@RequestBody Shop shop) {
-        Long id = shop.getId();
+        // 写入数据库
+        shopService.save(shop);
         // 返回店铺id
-        return shopService.queryById(id);
+        return Result.ok(shop.getId());
     }
 
     /**

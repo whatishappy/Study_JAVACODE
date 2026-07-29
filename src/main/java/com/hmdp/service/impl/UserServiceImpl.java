@@ -1,4 +1,4 @@
-package com.hmdp.service.impl;
+﻿package com.hmdp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
@@ -57,7 +57,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         session.setAttribute("code",code);*/
 
         //验证码存放到redis中
-        stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY,code,LOGIN_CODE_TTL, TimeUnit.MINUTES);
+        stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY + phone,code,LOGIN_CODE_TTL, TimeUnit.MINUTES);
 
 
         log.debug("发送短信验证码{}成功!!",code);
@@ -80,7 +80,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // TODO 3.从redis获取验证码
         //TODO 4.校验验证码
-        String cacheCode = stringRedisTemplate.opsForValue().get(LOGIN_CODE_KEY);
+        String cacheCode = stringRedisTemplate.opsForValue().get(LOGIN_CODE_KEY + phone);
         String code = loginForm.getCode();
 
 

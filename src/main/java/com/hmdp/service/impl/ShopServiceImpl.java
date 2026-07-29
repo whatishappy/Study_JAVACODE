@@ -1,4 +1,4 @@
-package com.hmdp.service.impl;
+﻿package com.hmdp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.BooleanUtil;
@@ -46,7 +46,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 
     public Shop queryWithMutex(Long id){
         //从redis中获取商铺缓存
-        String shopJson = stringRedisTemplate.opsForValue().get(CACHE_SHOP_KEY);
+        String shopJson = stringRedisTemplate.opsForValue().get(CACHE_SHOP_KEY + id);
         //存在，返回商铺信息
         if (StrUtil.isNotBlank(shopJson)) { //由于isnotblank方法 判断字符串有数据才在为true，
             // 其他所有情况都为false
@@ -63,7 +63,6 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 
         //TODO 4缓存重建
         //4.1 获取互斥锁
-        tryLock(LOCK_SHOP_KEY+id);
         try {
             boolean isLock =tryLock(LOCK_SHOP_KEY+id);
             //4.2判断互斥锁是否成功
@@ -81,7 +80,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             if (shop==null){
 
                 //将null写入redis
-                stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY,"",CACHE_NULL_TTL,TimeUnit.MINUTES);
+                stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY+id,"",CACHE_NULL_TTL,TimeUnit.MINUTES);
 
                 return null;
             }
@@ -89,7 +88,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 
 
             //数据库存在，将查询的商铺信息存入redis
-            stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY,JSONUtil.toJsonStr(shop),CACHE_SHOP_TTL, TimeUnit.MINUTES);
+            stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY+id,JSONUtil.toJsonStr(shop),CACHE_SHOP_TTL, TimeUnit.MINUTES);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }finally {
