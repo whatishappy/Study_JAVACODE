@@ -100,6 +100,17 @@
         <mxCell id="HAhBhizAy_yXl1ZgTsVe-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="尝试获取锁" vertex="1">
           <mxGeometry height="50" width="110" x="430" y="295" as="geometry" />
         </mxCell>
+        <mxCell id="72VLGqPiip-MadmHiy1Z-2" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HAhBhizAy_yXl1ZgTsVe-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72VLGqPiip-MadmHiy1Z-3" connectable="0" parent="72VLGqPiip-MadmHiy1Z-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="获取失败" vertex="1">
+          <mxGeometry relative="1" x="-0.2049" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72VLGqPiip-MadmHiy1Z-4" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HAhBhizAy_yXl1ZgTsVe-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="HAhBhizAy_yXl1ZgTsVe-28" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断是否获取锁成功&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="135" x="417.5" y="380" as="geometry" />
         </mxCell>
@@ -149,6 +160,9 @@
         </mxCell>
         <mxCell id="HAhBhizAy_yXl1ZgTsVe-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="释放互斥锁" vertex="1">
           <mxGeometry height="50" width="110" x="460" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="72VLGqPiip-MadmHiy1Z-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="获取成功" vertex="1">
+          <mxGeometry height="30" width="60" x="540" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
