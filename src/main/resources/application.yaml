@@ -4,7 +4,7 @@ spring:
   application:
     name: hmdp
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.10.101:3307/test?useSSL=false&serverTimezone=UTC
     username: root
     password: 123456

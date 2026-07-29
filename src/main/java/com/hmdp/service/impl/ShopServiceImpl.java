@@ -29,9 +29,9 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     private StringRedisTemplate stringRedisTemplate;
     @Override
     public Result queryById(Long id){
-
+        String cacheKey = CACHE_SHOP_KEY + id;
         //从redis中获取商铺缓存
-        String shopJson = stringRedisTemplate.opsForValue().get(CACHE_SHOP_KEY);
+        String shopJson = stringRedisTemplate.opsForValue().get(cacheKey);
         //存在，返回商铺信息
         if (StrUtil.isNotBlank(shopJson)) {
             Shop shop = JSONUtil.toBean(shopJson, Shop.class);
@@ -44,7 +44,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             return Result.fail("商铺不存在!!!");
         }
         //数据库存在，将查询的商铺信息存入redis
-        stringRedisTemplate.opsForValue().set(CACHE_SHOP_KEY,JSONUtil.toJsonStr(shop));
+        stringRedisTemplate.opsForValue().set(cacheKey, JSONUtil.toJsonStr(shop));
         //返回商铺信息
         return Result.ok(shop);
         //结束业务
