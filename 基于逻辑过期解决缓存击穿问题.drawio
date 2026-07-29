@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="iBWjEIH4HdfC8DB20QZo">
+    <mxGraphModel dx="704" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-2" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;开始&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="50" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-5" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HAhBhizAy_yXl1ZgTsVe-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="提交商铺信息" vertex="1">
+          <mxGeometry height="50" width="110" x="45" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-8" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HAhBhizAy_yXl1ZgTsVe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="从Redis查询缓存" vertex="1">
+          <mxGeometry height="50" width="110" x="45" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-9" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-10" connectable="0" parent="HAhBhizAy_yXl1ZgTsVe-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="未命中" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-15" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-17" connectable="0" parent="HAhBhizAy_yXl1ZgTsVe-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="命中" vertex="1">
+          <mxGeometry relative="1" x="-0.2615" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断缓存是否命中&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="130" x="35" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-12" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="返回null" vertex="1">
+          <mxGeometry height="60" width="120" x="45" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;结束&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="105" x="52.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-20" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-21" connectable="0" parent="HAhBhizAy_yXl1ZgTsVe-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="未过期" vertex="1">
+          <mxGeometry relative="1" x="-0.45" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-24" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-25" connectable="0" parent="HAhBhizAy_yXl1ZgTsVe-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="过期" vertex="1">
+          <mxGeometry relative="1" x="-0.1333" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-19" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断缓存是否过期&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="230" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-23" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="520" />
+            </Array>
+            <mxPoint x="160" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="返回商铺信息" vertex="1">
+          <mxGeometry height="50" width="110" x="245" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-27" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="尝试获取锁" vertex="1">
+          <mxGeometry height="50" width="110" x="430" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-28" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;判断是否获取锁成功&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="417.5" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-29" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="592.5" y="419.5" />
+            </Array>
+            <mxPoint x="552.5" y="419.5" as="sourcePoint" />
+            <mxPoint x="610" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-32" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-41" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.894;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="HAhBhizAy_yXl1ZgTsVe-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="420" />
+              <mxPoint x="580" y="520" />
+              <mxPoint x="340" y="520" />
+              <mxPoint x="340" y="450.4" />
+            </Array>
+            <mxPoint x="340" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="开启独立线程" vertex="1">
+          <mxGeometry height="50" width="110" x="610" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-37" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="根据id查询数据库" vertex="1">
+          <mxGeometry height="50" width="110" x="610" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-39" edge="1" parent="1" source="HAhBhizAy_yXl1ZgTsVe-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="将商铺信息写入redis" vertex="1">
+          <mxGeometry height="50" width="110" x="610" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="HAhBhizAy_yXl1ZgTsVe-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="释放互斥锁" vertex="1">
+          <mxGeometry height="50" width="110" x="460" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
