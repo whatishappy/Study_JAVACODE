@@ -1,12 +1,12 @@
-﻿server:
+server:
   port: 8081
 spring:
   application:
     name: hmdp
   datasource:
-    # 8.0 驱动类路径已变更，旧类已废弃
+
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # 新增 allowPublicKeyRetrieval=true 解决8.0认证公钥获取问题，时区建议改为上海避免时差问题
+
     url: jdbc:mysql://192.168.10.101:3307/test?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: 123456
