@@ -1,9 +1,8 @@
-﻿package com.hmdp.utils;
+package com.hmdp.utils;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import com.hmdp.dto.UserDTO;
-import org.apache.ibatis.plugin.Interceptor;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -22,16 +21,20 @@ public class RefreshTokenInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        // TODO 1.获取请求头中的token
+        // TODO1.获取请求头中的token
         String token = request.getHeader("authorization");
         if (StrUtil.isBlank(token)){
             //不存在token，直接放行
             return true;
         }
+        //兼容 Apifox 等客户端自动添加的 Bearer 前缀
+        if (token.startsWith("Bearer ")){
+            token = token.substring(7);
+        }
 
         String key = RedisConstants.LOGIN_USER_KEY;
 
-        //TODO 2.基于token获取reids中的用户
+        //TODO2.基于token获取reids中的用户
         Map<Object, Object> userMap = stringRedisTemplate.opsForHash().
                 entries(key + token);
         //判断用户是否存在
@@ -43,7 +46,7 @@ public class RefreshTokenInterceptor implements HandlerInterceptor {
         UserDTO userDTO = BeanUtil.fillBeanWithMap(userMap, new UserDTO(), false);
         UserHolder.saveUser(userDTO);
 
-        //TODO 刷新token有效期
+        //刷新token有效期
         stringRedisTemplate.expire(key + token,RedisConstants.LOGIN_USER_TTL, TimeUnit.MINUTES);
 
         return true;
