@@ -13,6 +13,7 @@ import com.hmdp.service.IUserService;
 import com.hmdp.utils.RedisConstants;
 import com.hmdp.utils.RegexPatterns;
 import com.hmdp.utils.RegexUtils;
+import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -60,7 +61,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY + phone,code,LOGIN_CODE_TTL, TimeUnit.MINUTES);
 
 
-        log.debug("发送短信验证码{}成功!!",code);
+        log.debug("发送短信验证码成功, 手机号: {}", RegexUtils.maskPhone(phone));
 
 
         //返回业务成功
@@ -90,6 +91,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         }
 
+        //验证码校验通过，删除验证码防止重放
+        stringRedisTemplate.delete(LOGIN_CODE_KEY + phone);
+
         User user = query().eq("phone", phone).one();
 
         //验证码正确，根据手机号查询用户
@@ -104,6 +108,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // TODO 6.3 将对象转为hash存储在redis中
         UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
+        // 手机号脱敏后再存Redis与返回前端，避免敏感信息泄露
+        userDTO.setPhone(RegexUtils.maskPhone(userDTO.getPhone()));
         Map<String, Object> usermap = BeanUtil.beanToMap(userDTO,new HashMap<>(),
                 CopyOptions.create().setIgnoreNullValue(true)
                         .setFieldValueEditor((filedName,fieldValue)-> fieldValue.toString()));
@@ -122,7 +128,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         user.setNickName("user_"+RandomUtil.randomString(10));
 
         //保存用户信息
-        save(user);
+        boolean success = save(user);
+        if (!success) {
+            throw new RuntimeException("用户创建失败");
+        }
         return user;
     }
 }

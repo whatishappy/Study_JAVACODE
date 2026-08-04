@@ -39,4 +39,15 @@ public class RegexUtils {
         }
         return !str.matches(regex);
     }
+
+    /**
+     * 手机号脱敏，11位手机号中间4位替换为*
+     * 例如 13812345678 → 138****5678
+     */
+    public static String maskPhone(String phone) {
+        if (StrUtil.isBlank(phone) || phone.length() < 7) {
+            return phone;
+        }
+        return phone.replaceAll("(\\d{3})\\d{4}(\\d{4})", "$1****$2");
+    }
 }

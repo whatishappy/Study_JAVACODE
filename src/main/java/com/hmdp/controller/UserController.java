@@ -1,9 +1,11 @@
 package com.hmdp.controller;
 
 
+import cn.hutool.core.bean.BeanUtil;
 import com.hmdp.dto.LoginFormDTO;
 import com.hmdp.dto.Result;
 import com.hmdp.dto.UserDTO;
+import com.hmdp.entity.User;
 import com.hmdp.entity.UserInfo;
 import com.hmdp.service.IUserInfoService;
 import com.hmdp.service.IUserService;
@@ -38,7 +40,7 @@ public class UserController {
      */
     @PostMapping("code")
     public Result sendCode(@RequestParam("phone") String phone, HttpSession session) {
-        // TODO 发送短信验证码并保存验证码
+        // 发送短信验证码并保存验证码
        return userService.sendCode(phone,session);
     }
 
@@ -81,5 +83,21 @@ public class UserController {
         info.setUpdateTime(null);
         // 返回
         return Result.ok(info);
+    }
+
+
+    @GetMapping("/{id}")
+    public Result queryUserById(@PathVariable("id") Long userId){
+        //查询详细
+        User user = userService.getById(userId);
+        if (user== null){
+            return Result.ok();
+        }
+
+        //转化为dto
+        UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
+
+        //返回处理后的
+        return Result.ok(userDTO);
     }
 }

@@ -19,8 +19,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 
 import java.time.LocalDateTime;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import static com.hmdp.utils.RedisConstants.*;
@@ -52,12 +50,12 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
 
         //使用逻辑过期解决缓存击穿问题
         Shop shop = queryWithLogicExpire(id);
+        if (shop == null) {
+            return Result.fail("店铺不存在");
+        }
 
         return Result.ok(shop);
-        //结束业务
     }
-
-    private static final ExecutorService CACHE_REBUILD_EXECUTOR= Executors.newFixedThreadPool(10);
 
     // 逻辑过期方式（需预热）
     public Shop queryWithLogicExpire(Long id) {
@@ -104,7 +102,10 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         }
 
         //更新数据库
-        updateById(shop);
+        boolean isSuccess = updateById(shop);
+        if (!isSuccess) {
+            return Result.fail("店铺不存在");
+        }
         //删除缓存
         stringRedisTemplate.delete(CACHE_SHOP_KEY+shop.getId());
         //返回结果
